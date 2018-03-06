@@ -38,7 +38,7 @@ def factorial(n):
         print space, 'returning', result
         return result
 
-
+# Excercise 6.7
 def is_power(a, b):
     """A number a, is a power of b if it is divisible by b and a/b is a power of b
     8 is a power of 2 if 8 is divisible by 2 and 8/2 is a power of 2"""
@@ -50,6 +50,18 @@ def is_power(a, b):
     else:
         return is_power(a/b, b)
 
-print is_power(8, 2)
-print is_power(9, 2)
-print is_power(64, 4)
+
+# Excercise 6.8
+def gcd(a, b):
+    """The greatest common divisor (GCD) of a and b is the largest number
+    that divides both of them with no remainder"""
+    if b == 0:
+        return a
+    else:
+        r = a % b
+        return gcd(b, r)
+
+
+print gcd(4, 8)
+print gcd(9, 5)
+print gcd(6, 9)
