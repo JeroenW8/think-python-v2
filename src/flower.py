@@ -36,7 +36,7 @@ def move(t, length):
 
 world = TurtleWorld()
 bob = Turtle()
-bob.delay = 0.01
+bob.delay = 0.1
 
 # draw a sequence of three flowers, as shown in the book.
 move(bob, -100)
